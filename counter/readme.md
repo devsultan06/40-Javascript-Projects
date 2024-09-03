@@ -51,4 +51,4 @@ This line updates the text content of the value element to reflect the current v
 
 #### 6. Usage:
 
-When the user clicks the "Increase" button, the counter value increases by . Clicking the "Decrease" button reduces the value by. Clicking the "Reset" button sets the counter back to 0. The current counter value is always displayed in the value element on the page.
+When user clicks the "Increase" button, the counter value increases by 1 . Clicking the "Decrease" button reduces the value by 1. Clicking the "Reset" button sets the counter back to 0. The current counter value is always displayed in the value element on the page.
