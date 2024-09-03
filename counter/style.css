@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+div.container {
+  background-color: #f1f5f8;
+  padding: 20px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1#counter {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #112b42;
+}
+
+h1#value {
+  font-size: 100px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #047d01;
+}
+
+button {
+  background-color: transparent;
+  color: black;
+  padding: 7px 20px;
+  border: 2px solid #212222;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: #212222;
+  z-index: 0;
+  transition: height 0.4s;
+}
+button:nth-child(1)::before {
+  background-color: #047d01;
+}
+button:nth-child(3)::before {
+  background-color: #205899;
+}
+
+button:hover::before {
+  height: 100%;
+}
+
+button:hover {
+  color: white;
+}
+
+button span {
+  position: relative;
+  z-index: 1;
+}
