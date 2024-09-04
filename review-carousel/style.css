@@ -25,10 +25,9 @@ img {
 
 div.review-container {
   display: flex;
-    gap: 200px;
-    justify-content: center;
-    align-items: center;
-   
+  gap: 200px;
+  justify-content: center;
+  align-items: center;
 }
 div.review {
   width: 700px;
@@ -39,7 +38,6 @@ div.review {
   font-weight: 600;
   border-radius: 10px;
   letter-spacing: 1px;
-
 }
 h2.title {
   font-size: 50px;
