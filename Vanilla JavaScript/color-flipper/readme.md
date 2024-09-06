@@ -12,7 +12,7 @@ This JavaScript code enables a button to change the background color of the webp
 
 # Explanation:
 
-#### 1. Element Selection:
+#### 1.Element Selection:
 
 `const btn = document.getElementById("btn");`
 This line selects the button element by its ID (btn).
