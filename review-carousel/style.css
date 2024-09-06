@@ -23,14 +23,19 @@ img {
   margin-top: 20px;
 }
 
-div.review-container {
-  display: flex;
-  gap: 200px;
-  justify-content: center;
-  align-items: center;
+.container {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
 }
-div.review {
-  width: 700px;
+
+.review-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review {
+  min-width: 100%;
   background-color: white;
   padding: 20px;
   color: black;
@@ -38,7 +43,11 @@ div.review {
   font-weight: 600;
   border-radius: 10px;
   letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 h2.title {
   font-size: 50px;
   font-weight: 600;
@@ -46,7 +55,7 @@ h2.title {
   color: #112b42;
 }
 
-div.underline {
+.underline {
   width: 100px;
   height: 5px;
   background-color: #4ea4e4;
@@ -64,7 +73,6 @@ h4.name {
 p.job {
   font-size: 18px;
   font-weight: 100;
-
   color: #4ea4e4;
   margin-top: 10px;
   text-transform: uppercase;
@@ -79,6 +87,7 @@ p.info {
   margin-bottom: 10px;
   line-height: 25px;
 }
+
 button {
   background-color: #4ea4e4;
   color: white;
@@ -94,4 +103,8 @@ button {
   overflow: hidden;
   transition: color 0.4s;
   margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #357ab7;
 }
