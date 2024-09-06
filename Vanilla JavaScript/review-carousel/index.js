@@ -16,7 +16,6 @@ const prevReview = () => {
   currentIndex = (currentIndex - 1 + totalReviews) % totalReviews;
   showReview(currentIndex);
 };
-
 const randomReview = () => {
   let randomIndex;
   do {
@@ -29,5 +28,3 @@ const randomReview = () => {
 document.getElementById("next-btn").addEventListener("click", nextReview);
 document.getElementById("prev-btn").addEventListener("click", prevReview);
 document.querySelector(".random-btn").addEventListener("click", randomReview);
-
-
