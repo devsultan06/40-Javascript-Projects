@@ -1,7 +1,6 @@
 let currentIndex = 0;
 const reviews = document.querySelectorAll(".review");
 const totalReviews = reviews.length;
-
 const showReview = (index) => {
   document.querySelector(".review-container").style.transform = `translateX(-${
     index * 100
@@ -31,5 +30,4 @@ document.getElementById("next-btn").addEventListener("click", nextReview);
 document.getElementById("prev-btn").addEventListener("click", prevReview);
 document.querySelector(".random-btn").addEventListener("click", randomReview);
 
-// Optional: Auto-slide every 5 seconds
-setInterval(nextReview, 5000);
+
