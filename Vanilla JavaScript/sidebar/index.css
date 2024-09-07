@@ -83,4 +83,7 @@ ul li a:hover {
 }
 
 @media screen and (max-width: 860px) {
+  .navbar{
+    width: 100%;
+  }
 }
