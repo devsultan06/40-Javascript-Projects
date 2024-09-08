@@ -32,6 +32,6 @@ In the CSS, the ul element (navigation menu) is hidden off-screen by default usi
 
 The media query in the CSS ensures that the menu behaves differently on screens smaller than 860px. On smaller screens, the menu items are hidden until the user clicks the toggle button, which activates the ul.active class and makes the menu visible.
 
-#### 6. Usage:
+#### 5. Usage:
 
 When the user clicks the toggle button (hamburger icon), the navigation links slide down and become visible. Clicking the button again will hide the links. On larger screens, the menu is always visible, so the toggle button is hidden.
