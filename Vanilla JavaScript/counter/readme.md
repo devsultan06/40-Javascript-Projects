@@ -49,6 +49,6 @@ Each button has an event listener that listens for click events:
 
 This line updates the text content of the value element to reflect the current value of the counter.
 
-#### 6. Usage:
+#### 5. Usage:
 
 When user clicks the "Increase" button, the counter value increases by 1 . Clicking the "Decrease" button reduces the value by 1. Clicking the "Reset" button sets the counter back to 0. The current counter value is always displayed in the value element on the page.
