@@ -38,6 +38,6 @@ In the CSS, the nav element (navigation menu) is hidden off-screen by default us
 
 The media query in the CSS ensures that the menu behaves differently on screens smaller than 860px. On smaller screens, the nav menu width ic changed to 100%.
 
-#### 6. Usage:
+#### 5. Usage:
 
 When the user clicks the toggle button (hamburger icon), the navbar menu slide left:0px and become visible. Clicking the close icon will hide the navbar menu.
