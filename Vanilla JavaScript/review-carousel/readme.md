@@ -42,7 +42,7 @@ This function displays the review corresponding to the passed index by moving th
 
 The nextReview function increments the currentIndex and loops back to the first review when the last one is reached. The prevReview function decrements the currentIndex and loops to the last review if the current review is the first one.
 
-#### 6. Random Review Function:
+#### 5. Random Review Function:
 
 `const randomReview = () => { let randomIndex;  do { randomIndex = Math.floor(Math.random() * totalReviews);  } while (randomIndex === currentIndex); currentIndex = randomIndex; showReview(currentIndex); };`
 
