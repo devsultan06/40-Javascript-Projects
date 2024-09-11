@@ -19,7 +19,7 @@ body {
 
 div.container {
   position: relative;
-  max-width: 70%;
+  max-width: 90%;
   overflow: hidden;
 }
 
@@ -32,7 +32,7 @@ div.container h2 {
 }
 
 div.faq {
-  max-width: 500px;
+  max-width: 900px;
   background-color: white;
   margin: 30px 0px;
   text-align: justify;
