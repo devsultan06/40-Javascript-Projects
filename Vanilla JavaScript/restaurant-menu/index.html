@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Our Menu</h1>
+      <hr />
+      <div class="links">
+        <button onclick="filterMenu('all')">All</button>
+        <button onclick="filterMenu('breakfast')">Breakfast</button>
+        <button onclick="filterMenu('lunch')">Lunch</button>
+        <button onclick="filterMenu('shakes')">Shakes</button>
+        <button onclick="filterMenu('dinner')">Dinner</button>
+      </div>
+      <div class="menu">
+        <!-- 3 Breakfast Items -->
+        <div class="menu-items breakfast">
+          <div class="image">
+            <img
+              src="./images/delicious-pancakes-with-strawberry-jam.jpg"
+              alt=""
+            />
+          </div>
+          <div class="box">
+            <div class="title">
+              <h2>Buttermilk Pancakes</h2>
+              <span>$15</span>
+            </div>
+            <p>
+              I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+              freegan copper mug whatever cold-pressed
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-items breakfast">
+          <div class="image">
+            <img src="./images/waffles-with-jam.jpg" alt="" />
+          </div>
+          <div class="box">
+            <div class="title">
+              <h2>French Toast</h2>
+              <span>$30</span>
+            </div>
+            <p>
+              Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism
+              austin mlkshk truffaut
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-items breakfast">
+          <div class="image">
+            <img
+              src="./images/gourmet-dessert-with-dark-chocolate-milkshake-generative-ai.jpg"
+              alt=""
+            />
+          </div>
+          <div class="box">
+            <div class="title">
+              <h2>Belgian Waffles</h2>
+              <span>$20</span>
+            </div>
+            <p>
+              Vaporware iPhone mumblecore selvage raw denim slow-carb leggings
+              gochujang helvetica man braid jianbing. Marfa thundercats
+            </p>
+          </div>
+        </div>
+
+        <!-- 2 Lunch Items -->
+        <div class="menu-items lunch">
+          <div class="image">
+            <img src="./images/photorealistic-burger-meal.jpg" alt="" />
+          </div>
+          <div class="box">
+            <div class="title">
+              <h2>Avocado Toast</h2>
+              <span>$25</span>
+            </div>
+            <p>
+              Ombucha chillwave fanny pack 3 wolf moon street art photo booth
+              before they sold out organic viral.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-items lunch">
+          <div class="image">
+            <img src="./images/waffles-with-jam.jpg" alt="" />
+          </div>
+          <div class="box">
+            <div class="title">
+              <h2>Classic Burger</h2>
+              <span>$18</span>
+            </div>
+            <p>
+              Organic burger with fresh lettuce, tomatoes, and cheddar cheese.
+              Perfect for a quick and tasty meal.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1 Shake Item -->
+        <div class="menu-items shakes">
+          <div class="image">
+            <img src="./images/tint2.webp" alt="" />
+          </div>
+          <div class="box">
+            <div class="title">
+              <h2>Chocolate Milkshake</h2>
+              <span>$10</span>
+            </div>
+            <p>
+              A rich and creamy chocolate milkshake topped with whipped cream.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1 Dinner Item -->
+        <div class="menu-items dinner">
+          <div class="image">
+            <img src="./images/tint1.jpg" alt="" />
+          </div>
+          <div class="box">
+            <div class="title">
+              <h2>Grilled Steak</h2>
+              <span>$35</span>
+            </div>
+            <p>
+              Juicy grilled steak served with a side of mashed potatoes and
+              grilled vegetables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

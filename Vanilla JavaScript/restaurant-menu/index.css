@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #f1f5f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+div.container {
+  position: relative;
+  max-width: 90%;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+div.menu h1 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #112b42;
+}
+
+hr {
+  margin: 10px 0;
+  border: 0;
+  width: 100px;
+  display: inline-flex;
+  border-top: 3px solid #c6a169;
+}
+
+div.links {
+  margin: 30px 0px;
+ gap: 20px;
+
+}
+
+div.links button {
+  padding: 7px 12px;
+  background-color: transparent;
+  color: #c6a169;
+  border: 2px solid #c6a169;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  margin: 10px 10px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.87);
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.87);
+}
+
+div.links button:hover {
+  background-color: #c6a169;
+  color: white;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  border: 3px solid #c6a169;
+  border-radius: 10px;
+}
+
+div.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 100px;
+  gap: 30px;
+}
+
+div.menu-items{
+    display: flex;
+    text-align: justify;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+div.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #c6a169;
+    margin-bottom: 20px;
+}
+
+div.title h2, div.title span{
+    color: #112b42;
+    margin-bottom: 20px;
+}
+
+ div.title span{
+    color: #c6a169;
+ }
+
+div.menu-items p{
+    color: #5f6e7a;
+    line-height: 40px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  div.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.links button {
+    margin: 5px 0;
+    width: 80%;
+  }
+
+  div.menu-items p {
+    line-height: 30px;
+  }
+}
