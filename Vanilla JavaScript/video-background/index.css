@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  width: 100%;
+  height: 100vh;
+}
+
+div.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+div.buttons {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.87);
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.87);
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Hide the video element initially */
+video {
+  display: none; /* Hide the video initially */
+  width: 100%;
+  height: 100vh;
+}
+
+/* When the video is ready, show it */
+video.loaded {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  transition: 1s opacity;
+  display: block; /* Show video once it is loaded */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -99;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
