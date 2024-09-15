@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #333;
+  color: white;
+  transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.navbar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar nav ul li {
+  margin: 0 15px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(0);
+}
+
+.hidden {
+  transform: translateY(-100%);
+}
+
+section {
+  height: 100vh;
+  padding: 20px;
+}
+
+main {
+  padding-top: 60px; /* Height of the navbar */
+}
