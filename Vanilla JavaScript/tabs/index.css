@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #f1f5f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #112b42;
+}
+
+p.lorem {
+  font-size: 20px;
+  color: #112b42;
+  margin: 20px 0;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+div.box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  height: 200px;
+  margin-bottom: 500px;
+}
+
+div.content {
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 250px;
+}
+
+div.content h3 {
+  color: #112b42;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+div.content p {
+  color: #112b42;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+div.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #dae3ec;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+button {
+  padding: 7px 12px;
+  background-color: transparent;
+  color: #112b42;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  margin: 10px 10px;
+  width: 100px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+button:hover {
+  background-color: #112b42;
+  color: white;
+}
+
+/* Hide tab contents by default */
+.tab-content {
+  display: none;
+}
+
+/* Show the content with the 'active' class */
+.tab-content.active {
+  display: block;
+}
+
+@media screen and (max-width: 950px) {
+  div.box{
+    display: block;
+    
+  }
+
+  img{
+    margin-bottom: 30px;
+  }
+    
+}
