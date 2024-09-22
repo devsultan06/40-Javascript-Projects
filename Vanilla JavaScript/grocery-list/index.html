@@ -3,9 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grocery List</title>
+    <title>Grocery List CRUD</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <div class="container">
+      <h1>Grocery List</h1>
+      <form id="grocery-form">
+        <input
+          type="text"
+          id="grocery-input"
+          placeholder="Add grocery item..."
+          required
+        />
+        <button type="submit">Add Item</button>
+      </form>
+
+      <ul id="grocery-list"></ul>
+
+      <button id="clear-all" style="display: none">Clear All</button>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>
